@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="395dp"
+        android:layout_height="47dp"
+        android:layout_alignLeft="@+id/lectSubmittedApplLV"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/lectSubmittedApplLV"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="18dp"
+        android:text="SUBMITTED APPLICATIONS ARE LISTED BELOW"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addTutorsBtn"
+        android:layout_width="105dp"
+        android:layout_height="49dp"
+        android:layout_alignEnd="@+id/lectSubmittedApplLV"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/lectSubmittedApplLV"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginStart="152dp"
+        android:background="@drawable/btn_bg"
+        android:text="Add Tutors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/lectSubmittedApplLV"
+        android:layout_width="395dp"
+        android:layout_height="454dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/addTutorsBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

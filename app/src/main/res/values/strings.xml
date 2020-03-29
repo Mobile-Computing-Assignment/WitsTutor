@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Wits Tutor</string>
+    <string name="surname">Surname:</string>
+    <string-array name="SCHOOL_NAME">
+        <item>SCHOOL NAME</item>
+        <item>CSAM</item>
+        <item>MATHEMATICS</item>
+        <item>STATS &amp; ACTURIAL SCI</item>
+        <item>PHYSICS</item>
+        <item>CHEMISTRY</item>
+        <item>GEOSCIENCES</item>
+        <item>MOLECULAR &amp; CELL BIOLOGY</item>
+        <item>GEOG,ARCHEO &amp; ENVIRO STU</item>
+        <item>ANIMAL,PLANT &amp; ENVIRO SCI</item>
+    </string-array>
+</resources>

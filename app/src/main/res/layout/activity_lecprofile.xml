@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg">
+
+    <TextView
+        android:id="@+id/nameET"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="Name:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:targetApi="lollipop"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/surnameET"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Surname:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameET"
+        android:layout_marginLeft="8dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/schoolET"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:text="School:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surnameET"
+        android:layout_marginLeft="8dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/nameET"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/surnameTV"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/et_bg"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/surnameET"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/schoolTV"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/schoolET"
+        app:layout_constraintTop_toBottomOf="@+id/surnameTV"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/myCoursesBtn"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onclickmyCourse"
+        android:text="my courses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/attenRecordBtn"
+        app:layout_constraintStart_toEndOf="@+id/applBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947" />
+
+    <TextView
+        android:id="@+id/perNoTV"
+        android:layout_width="275dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        android:background="@drawable/et_bg"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+        app:layout_constraintBottom_toTopOf="@+id/nameTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/applBtn"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClickApplications"
+        android:text="Applications"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.947"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/attenBtn"
+        android:layout_width="129dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="388dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClickAttenCourse"
+        android:text="Take Attendance"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.455" />
+
+    <Button
+        android:id="@+id/attenRecordBtn"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg"
+        android:onClick="onClickAttenRecord"
+        android:text="Attendace Record"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="112dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="156dp"
+        android:text="Person No:"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="139dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:text="MY PROFILE"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        app:layout_constraintBottom_toTopOf="@+id/perNoTV"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
